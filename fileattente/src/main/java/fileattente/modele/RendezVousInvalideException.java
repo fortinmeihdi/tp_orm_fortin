@@ -3,6 +3,9 @@ package fileattente.modele;
 import java.util.HashMap;
 import java.util.Map;
 
+import javax.ejb.ApplicationException;
+
+@ApplicationException(rollback = true)
 public class RendezVousInvalideException extends Exception {
 	
 	private static final long serialVersionUID = 1L;
